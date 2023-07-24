@@ -26,6 +26,17 @@ You can edit the poll time for each request to spare your phone's battery.
 * Service  
 In the service tab, you can toggle the notification service.
 
+# Create a notification:
+
+curl --request POST \
+  --url http://xxx.xxx.xxx.xxx:5000/notifications \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "title": "ThisIsTheTitle",
+  "body": "Here are some body text for the notification"
+}'
+
+
 ## Issues
 Please report issues using [GitHub's issues tab](https://github.com/viktorholk/push-notifications-api/issues).
 
